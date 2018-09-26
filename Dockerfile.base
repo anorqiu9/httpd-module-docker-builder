@@ -1,0 +1,23 @@
+
+FROM centos:6.6
+
+MAINTAINER anorqiu@163.com
+
+#install wget && tar
+RUN yum -y install wget.x86_64 tar.x86_64
+
+#install gcc, libgcc, make, auto-config
+RUN yum -y install \
+	gcc.x86_64 \
+	libgcc.x86_64 \
+	make.x86_64
+
+RUN yum -y install \
+	autoconf \
+	automake \
+	libtool \
+	pkgconfig
+
+#clean with yum
+RUN yum -y clean all
+

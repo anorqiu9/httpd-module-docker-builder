@@ -5,8 +5,7 @@ Overview
 
 Prerequisites
 
-	1. Docker Engine installed. For more information, please refer to https://docs.docker.com
-		And also, you can use, https://msstash.morningstar.com/users/aqiu/repos/linux-script-tools/browse/install_docker_on_CentOS7.sh, to install Docker engine on CentOS 7 or above.
+	1. Docker Engine installed. For more information, please refer to https://docs.docker.com to install Docker engine on CentOS 7 or above.
 	2. openssl soruce pakcage uri. (ftp://ftp.openssl.org/source)
 	3. version number of the soname of openssl shared libraries. you can get it by run the following command on the runtime host
 	rpm -ql openssl | grep -Em 1 "\/libssl.so.[^.]+" | xargs readelf -d | grep -Eo "soname: \[[^]]+\]"
